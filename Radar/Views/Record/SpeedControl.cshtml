@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "SpeedControl"; 
+}
+
+@using RadarStorage
+
+    <h3>Авто превысившие указанную скорость за указанную дату:</h3>
+
+@foreach (RadarRecord record in ViewBag.Control)
+{
+    <p>@record.ToString()</p>
+}
+

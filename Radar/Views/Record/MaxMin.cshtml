@@ -1,0 +1,14 @@
+﻿@using RadarStorage
+<h3>Максимальная скорость:</h3>
+
+@foreach (RadarRecord record in ViewBag.RecordsMax)
+{
+    <p>@record.ToString()</p>
+}
+
+<h3>Минимальная скорость:</h3>
+
+@foreach (RadarRecord record in ViewBag.RecordsMin)
+{
+    <p>@record.ToString()</p>
+}
